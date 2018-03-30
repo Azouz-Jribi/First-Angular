@@ -1,0 +1,43 @@
+<p>
+  {{ title }} works :) | {{ param }}
+</p>
+<hr>
+<h2>Menu</h2>
+<div *ngFor='let link of links'>
+    <a [routerLink]="[link.path]">{{link.path}}</a>
+</div>
+<hr>
+<h2>User info</h2>
+Name: {{ user.name }} 
+<br>
+Age : {{ user.age }}
+<hr>
+<h2>Modifier</h2>
+<form>
+  <div>Name : <input name='name' [(ngModel)]='user.name'></div>
+  <div>Age : <input name='age' [(ngModel)]='user.age'></div>
+  <div><input type="checkbox" name="active" [checked]='user.isActive'>is Active</div>
+  <div><button (click)='save()'>Save</button></div>
+</form>
+<hr>
+<h2>RestAPI && Directives</h2>
+<div *ngFor='let usr of users'>
+ <div>
+   <span *ngIf='usr.isActive == false'>{{ isActive | active }}</span> [Name: {{ usr.name | addPoints }} | Age : {{ usr.age }}].
+   <span [ngSwitch]="usr.isActive">
+     <span *ngSwitchCase='true'> [+]</span>
+     <span *ngSwitchCase='false'> [-]</span>
+   </span>
+  </div>
+</div>
+<hr>
+<div><button (click)='azouzEvent.emit("AzouzHandel")'>send param</button></div>
+<hr>
+<h2>form validation</h2>
+<form [formGroup]="clientFormGroup" (submit)="formAction(clientFormGroup)" >
+  Name : <input name="name" formControlName="name">
+  <span *ngIf="clientFormGroup.controls.name.hasError('nameValidator')" style="color:red">Error min 3</span>
+  Age : <input name="age" formControlName="age" />
+  <span *ngIf="clientFormGroup.controls.age.hasError('min')" style="color:red">Error min</span>
+  <input type="submit" value='Save me!' [disabled]="!clientFormGroup.valid">
+</form>

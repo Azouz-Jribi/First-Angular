@@ -1,0 +1,12 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  <!-- router container -->
+  <router-outlet></router-outlet>
+  <!-- param: send param to child component || azouzEvent: get param from child component -->
+  <app-azouz [param]='version' (azouzEvent)='handelAzouzEvent($event)' ></app-azouz>
+</div>
+
+

@@ -1,0 +1,8 @@
+{
+    "users": [
+        {"name": "Alolo", "age": 15, "isActive": true},
+        {"name": "Salah", "age": 16, "isActive": true},
+        {"name": "Med", "age": 17, "isActive": true},
+        {"name": "toto", "age": 18, "isActive": true}
+    ]
+}
