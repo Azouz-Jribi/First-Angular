@@ -33,3 +33,4 @@ Use the json server to mock back-end
 Add "json-server": "json-server --watch db.json" to package.json to start our back end 
 Run server [npm run json-server]
 (https://www.sitepoint.com/angular-rxjs-create-api-service-rest-backend/)
+https://medium.com/codingthesmartway-com-blog/create-a-rest-api-with-json-server-36da8680136d
