@@ -29,8 +29,12 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## json-server
 
 Use the json server to mock back-end
-[npm install json-server --save] 
-Add "json-server": "json-server --watch db.json" to package.json to start our back end 
-Run server [npm run json-server]
-(https://www.sitepoint.com/angular-rxjs-create-api-service-rest-backend/)
-https://medium.com/codingthesmartway-com-blog/create-a-rest-api-with-json-server-36da8680136d
+[`npm install json-server --save`] 
+Add the script `json-server": "json-server --watch db.json` to package.json to start our back end 
+Run server [`npm run json-server`]
+
+##BIO
+
+* Rest API : https://www.sitepoint.com/angular-rxjs-create-api-service-rest-backend
+* Json server : https://medium.com/codingthesmartway-com-blog/create-a-rest-api-with-json-server-36da8680136d
+* Ng Material : https://material.angular.io/
