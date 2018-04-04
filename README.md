@@ -28,9 +28,10 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## json-server
 
-Use the json server to mock back-end
-[`npm install json-server --save`] 
-Add the script `json-server": "json-server --watch db.json` to package.json to start our back end 
+Use the json server to mock back-end :[`npm install json-server --save`].
+
+Add the script `json-server": "json-server --watch db.json` to package.json to start our back end.
+
 Run server [`npm run json-server`]
 
 ## BIO
